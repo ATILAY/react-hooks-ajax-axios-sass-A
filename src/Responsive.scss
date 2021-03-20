@@ -1,0 +1,86 @@
+@media (max-width: 1380px) {
+    .DiscoverAppDoc {
+        display: none;
+    }
+}
+
+@media (max-width: 2000px) {
+    .Pagination {
+        position: fixed;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        // width: 45%;
+        left: 28%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1580px) {
+    .Pagination {
+        right:  70%;
+        justify-content: end;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        left: auto;
+    }
+}
+
+@media (max-width: 980px) {
+    .Pagination {
+        margin-left: 10%;
+        right:  unset;
+        & div {
+            width: 10px;
+            text-justify: inter-word;
+            margin: 5px;
+        }
+    }
+}
+
+@media (max-width: 735px) {
+    .Pagination {
+        margin-left: 1%;
+        right:  unset;
+    }
+}
+
+.Pagination {
+    color: aliceblue;
+    margin-top: 55px;
+}
+
+.Pagination div {
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+
+.Pagination div:hover {
+    color: gold;
+    transition: all 1s;
+}
+
+.cartoon-title-text {
+
+    color: darkred;
+    transition: all 1s;
+
+    &:hover {
+        color: cornsilk;
+        cursor: help;
+        transition: all 1s;
+    }
+
+    &:hover:after {
+        content: attr(data-hover);
+    }
+}
+
+// .episodes-li:hover {
+//     & span {
+//         font-size: larger;
+//     }
+//   }

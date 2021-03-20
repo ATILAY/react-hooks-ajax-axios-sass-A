@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React, {useState, useEffect, useRef} from 'react';
 import './App.css';
+import './Responsive.scss';
+import MainContent from './components/MainContent';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="outer">
+    <MainContent></MainContent>
     </div>
   );
 }
 
 export default App;
+
+//APP performance video
+//https://www.loom.com/share/862b13285e2844a1975256a0bd0c02eb

@@ -1,38 +1,128 @@
+body {
+  background: seagreen;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
   text-align: center;
+  width: auto;
+  max-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul li {
+  list-style-type: none;
+  max-width: 500px;
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.episodes-li {
+  border: 1px solid seashell;
+  background-color: darkred;
+  color:seashell;
+  border-radius: 5%;
+  border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 1s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.episode-names {
+  font-size: 22px;
+  margin: 20px;
 }
+
+.episodes-li:hover {
+  background-color: darkcyan;
+  letter-spacing: 3px;
+  transition: all 1s;
+  /* background-color: seagreen; */
+  /* color:seashell; */
+}
+
+
+.characters-element {
+  cursor: pointer;
+}
+
+.characters-react-element {
+  margin:0;
+}
+
+
+.characters-element ul {
+  padding: 0;
+}
+
+.date-and-episode-order {
+  font-size: 9px;
+  margin: 20px;
+}
+
+.SingleCharacterDetailsWrapper {
+  padding: 10px 0;
+  margin: 5px 10x;
+  font-size: 15px;
+  transition: all 1s;
+}
+
+.SingleCharacterDetailsWrapper:hover {
+  padding: 30px 0;
+  margin: 5px 10x;
+  font-size: 30px;
+  letter-spacing: 0.1px;
+  transition: all 1.4s;
+}
+
+.comes-from {
+  margin: 0 1.33em 0.33em;
+}
+
+/* .comes-from:hover {
+  margin: 1.33em;
+} */
+.SingleCharacterDetailsWrapper:hover .comes-from  {
+  margin-top: 0;
+  margin-bottom: 1.33em;
+}
+
+.see-unsee-characters {
+  font-style: italic;
+  transition: all 1s;
+  /* border-top: 1px solid; */
+}
+
+.see-unsee-characters:hover {
+  font-size: 25px;
+  letter-spacing: 4px;
+  transition: all .5s;
+  margin-top: 20px !important;
+  border-top: 1px solid;
+
+}
+
+.DiscoverAppDoc {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  font-style: italic;
+  /* font-size: 0.1rem; */
+}
+
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.DiscoverAppDoc li:hover, h2:hover {
+  color:whitesmoke;
+  cursor: help;
+  /* letter-spacing: 1px; */
+}
+
+.cartoon-title-text:hover {
+  color: darkred;
 }
